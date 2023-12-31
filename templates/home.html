@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple quart application</title>
+</head>
+<body>
+    <h1>Welcome to Simple quart application</h1>
+    <form method="post" action="{{ url_for('create_post') }}">
+        <textarea name="user" placeholder="user"></textarea>
+        <textarea name="content" placeholder="What's on your mind?"></textarea>
+        <button type="submit">Post</button>
+    </form>
+    <div>
+        {% for post in posts %}
+            <div>
+                <p>{{ post.user }}: {{ post.content }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
