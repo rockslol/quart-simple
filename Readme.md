@@ -11,7 +11,7 @@ Welcome to the Simple quart application! This is a basic social media applicatio
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.9 (or up) 
 - Quart web framework
 
 ### Installation
